@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Enter to my heart</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+	<div class="container">
+			<h1>Fill the details to read my heart</h1>
+			<input type="text" name="email" placeholder="WHAT I CALL YOU THE MOST" required="true">
+			<input type="password" name="password" placeholder="Password for entry" required="true">
+			<button onclick="checkCredentials()">ENTER</button>
+	</div>
+
+	<script>
+		function checkCredentials() {
+			var emailInput = document.getElementsByName("email")[0];
+			var passwordInput = document.getElementsByName("password")[0];
+
+			if (emailInput.value === "potti" && passwordInput.value === "loveyouhoney") {
+				window.location.replace("https://www.canva.com/design/DAFlyTSwwmY/q8JNBNgxpncdyr-VqpYU_g/view?website#2");
+			} else {
+				alert("Incorrect details. Please try again.");
+			}
+		}
+	</script>
+</body>
+</html>
